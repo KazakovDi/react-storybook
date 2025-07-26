@@ -18,13 +18,15 @@ function App() {
 
   return (
     <div>
-      <Input type="password" clearable />
-
+      <div>
+        <Input type="password" clearable />
+      </div>
+      <hr />
       <button onClick={handleSuccess}>Show Primary Toast</button>
       <button onClick={handleWarning}>Show Warning Toast</button>
-
       <ToastContainer />
-      <button onClick={() => setIsOpen(true)}>open</button>
+      <hr />
+      <button onClick={() => setIsOpen(true)}>Open sidebar</button>
       <Sidebar
         onClose={() => {
           setIsOpen(false);
