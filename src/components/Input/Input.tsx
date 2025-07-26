@@ -23,6 +23,10 @@ export const Input = (props: MyInputProps) => {
     }
   };
 
+  const onCrossClick = () => {
+    if (value.length) setValue("");
+  };
+
   return (
     <div style={styles.inputContainer}>
       <input
@@ -41,8 +45,11 @@ export const Input = (props: MyInputProps) => {
         ) : null}
 
         {props.clearable ? (
-          <div style={styles.btn} onClick={() => setValue("")}>
-            <Cross />
+          <div
+            style={{ ...styles.btn, cursor: value ? "pointer" : "default" }}
+            onClick={onCrossClick}
+          >
+            <Cross fill={value ? "#000" : "#c3c3c3"} />
           </div>
         ) : null}
       </div>
