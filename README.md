@@ -1,23 +1,24 @@
-Run project:
-  -npm i
-  -npm start
-Components overview:
-  Input
-    -Takes the same properties as default html input
-    -If property "type" is password, it will display a clickable icon which shows or hides input's value
-    -If property "clearable" is passed, will display a clickable cross icon which sets input's value to an empty string
-  Toast
-    -Displays a toast message
-    -Can be in 3 variants: warning, success, primary
-    -Works with the toast manager
-    -App.tsx contains controls to display a toast
-  Sidebar
-    -Displays a sidebar, which appears from the right side of the screen if the property is passed
-    -App.tsx contains a button to display sidebar
-    -Sidebar can render nested items with specific structure. Example of the sctructure is already passed through props
-    -Every sidebar item is clickable
-    -clicking the top right cross or dark section closes the sidebar
-Screnshots
+## Components Overview
+
+### Input
+- Takes the same properties as default HTML `<input>`
+- If property `type="password"`:
+  - Displays a clickable icon to **show or hide** the input’s value
+- If property `clearable` is passed:
+  - Displays a clickable “×” icon that **clears** the input’s value
+
+### Toast
+- Displays a toast message
+- Available in three variants: `warning`, `success`, `primary`
+- Works with the toast manager
+- `App.tsx` includes controls to trigger each toast variant
+
+### Sidebar
+- Displays a sidebar sliding in from the **right**
+- Controlled via a button in `App.tsx`
+- Accepts nested items using a specific prop‑structure
+  - Every sidebar item is clickable
+- Clicking the top‑right “×” icon or the dark overlay **closes** the sidebar
 
 <img width="394" height="95" alt="input1" src="https://github.com/user-attachments/assets/ddf61dc2-826c-46c3-b29a-1c8625b6e849" />
 <img width="380" height="83" alt="image" src="https://github.com/user-attachments/assets/9a410b3b-900d-47b4-9207-4251d9783d1f" />
