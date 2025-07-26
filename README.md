@@ -1,46 +1,28 @@
-# Getting Started with Create React App
+Run project:
+  -npm i
+  -npm start
+Components overview:
+  Input
+    -Takes the same properties as default html input
+    -If property "type" is password, it will display a clickable icon which shows or hides input's value
+    -If property "clearable" is passed, will display a clickable cross icon which sets input's value to an empty string
+  Toast
+    -Displays a toast message
+    -Can be in 3 variants: warning, success, primary
+    -Works with the toast manager
+    -App.tsx contains controls to display a toast
+  Sidebar
+    -Displays a sidebar, which appears from the right side of the screen if the property is passed
+    -App.tsx contains a button to display sidebar
+    -Sidebar can render nested items with specific structure. Example of the sctructure is already passed through props
+    -Every sidebar item is clickable
+    -clicking the top right cross or dark section closes the sidebar
+Screnshots
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<img width="394" height="95" alt="input1" src="https://github.com/user-attachments/assets/ddf61dc2-826c-46c3-b29a-1c8625b6e849" />
+<img width="380" height="83" alt="image" src="https://github.com/user-attachments/assets/9a410b3b-900d-47b4-9207-4251d9783d1f" />
 
-## Available Scripts
+<img width="757" height="747" alt="image" src="https://github.com/user-attachments/assets/5596ba7c-b6d4-4214-b8f6-2ae5fa1e3d1e" />
+<img width="756" height="747" alt="image" src="https://github.com/user-attachments/assets/a53cb7f1-eb97-49cb-91c5-e58894a14e45" />
 
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+<img width="1920" height="886" alt="image" src="https://github.com/user-attachments/assets/66e9d0f3-e49b-4f59-b4b8-b0abc1fe7792" />
