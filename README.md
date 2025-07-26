@@ -3,9 +3,9 @@
 ### Input
 - Takes the same properties as default HTML `<input>`
 - If property `type="password"`:
-  - Displays a clickable icon to **show or hide** the input’s value
+- Displays a clickable icon to **show or hide** the input’s value
 - If property `clearable` is passed:
-  - Displays a clickable “×” icon that **clears** the input’s value
+- Displays a clickable “×” icon that **clears** the input’s value
 
 ### Toast
 - Displays a toast message
@@ -17,7 +17,7 @@
 - Displays a sidebar sliding in from the **right**
 - Controlled via a button in `App.tsx`
 - Accepts nested items using a specific prop‑structure
-  - Every sidebar item is clickable
+- Every sidebar item is clickable
 - Clicking the top‑right “×” icon or the dark overlay **closes** the sidebar
 
 <img width="394" height="95" alt="input1" src="https://github.com/user-attachments/assets/ddf61dc2-826c-46c3-b29a-1c8625b6e849" />
